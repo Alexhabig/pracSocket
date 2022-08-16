@@ -17,9 +17,9 @@ io.on('connection', (socket) => {
         io.emit('chat message', msg);
         console.log("message: " + msg);
     });
-    // socket.on('disconnect', ()=>{
-    //     console.log("disconnected kana gago")
-    // });
+    socket.on('disconnect', ()=>{
+        console.log("disconnected kana gago")
+    });
 
 });
 
